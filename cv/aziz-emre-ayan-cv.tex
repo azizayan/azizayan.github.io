@@ -1,0 +1,162 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Compile with pdfLaTeX on Overleaf.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    \textbf{\Huge \scshape Aziz Emre Ayan} \\ \vspace{4pt}
+    \small Computer Science Student $|$ AI \& Software Development \\ \vspace{4pt}
+    \href{mailto:azizayan52@gmail.com}{azizayan52@gmail.com} $|$
+    \href{https://azizayan.com}{azizayan.com} $|$
+    \href{https://www.linkedin.com/in/aziz-emre-ayan}{linkedin.com/in/aziz-emre-ayan} $|$
+    \href{https://github.com/azizayan}{github.com/azizayan}
+\end{center}
+
+% ---------- PROFILE ----------
+\section{Profile}
+Computer Science undergraduate at Bilkent University focused on practical AI and software systems, including local-first tools, realtime pipelines, and command-line applications.
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bilkent University}{Ankara, Turkey}
+    {B.Sc. in Computer Science}{2023 -- Present}
+  \resumeSubheading
+    {Stanford University}{Remote}
+    {Code in Place Certificate}{2024}
+\resumeSubHeadingListEnd
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {MeetCinema}{}%
+    {Rust, Tauri, whisper.cpp, Nokhwa, CPAL}{}%
+    \resumeItemListStart
+      \resumeItem{Building a local, private desktop application for live captions and meeting notes across video-call platforms}
+      \resumeItem{Captures webcam and microphone input, transcribes speech on-device, and sends captioned video through a virtual camera}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Interruptible Realtime Voice Agent}{}%
+    {Next.js, FastAPI, Pipecat, Daily, Deepgram, Cartesia}{}%
+    \resumeItemListStart
+      \resumeItem{Built a browser-based voice agent with realtime speech-to-text, LLM responses, text-to-speech, and mid-utterance interruption}
+      \resumeItem{Streams agent state, round-trip latency, and interruption events to a live dashboard over a WebRTC data channel}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Paper Review CLI}{}%
+    {Python, LLM, Overleaf}{}%
+    \resumeItemListStart
+      \resumeItem{Built an AI-powered academic paper reviewer that converts an Overleaf URL into structured, comment-style manuscript feedback}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {AgentMesh}{}%
+    {Multi-Agent Systems, Local-First}{}%
+    \resumeItemListStart
+      \resumeItem{Developing a local-first coordination fabric for software agents}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Cortex}{}%
+    {Workspace Agent, MCP}{}%
+    \resumeItemListStart
+      \resumeItem{Developing a context-aware workspace agent built around a daemon and Model Context Protocol integration}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- EXPERIENCE ----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Research Fellow}{Remote}
+    {Freya Research Fellows}{September 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Selected for an independent researcher community focused on understanding and advancing artificial intelligence research}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Volunteer Team Member}{Remote}
+    {We Have Amazing Friends}{September 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Help maintain and improve the mentorship platform connecting students with professionals around the world}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Software R\&D Intern}{One-month internship}
+    {SRDC}{ }
+    \resumeItemListStart
+      \resumeItem{Contributed to software research and development projects spanning artificial intelligence, data management, healthcare informatics, and enterprise systems}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {President}{Ankara, Turkey}
+    {Bilkent AI Society}{2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Lead workshops, conferences, and mentorship initiatives for the university's AI community}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Programming:} Python (primary), Rust, TypeScript, Java, C++}
+  \resumeItem{\textbf{AI \& Data:} scikit-learn, NumPy, pandas, matplotlib, prompt design, tool routing, LLM applications}
+  \resumeItem{\textbf{Frameworks \& Tools:} FastAPI, Next.js, Tauri, Pipecat, WebRTC, Docker, Git/GitHub, MCP}
+\resumeSubHeadingListEnd
+
+\end{document}
